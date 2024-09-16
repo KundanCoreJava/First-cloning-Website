@@ -1,0 +1,273 @@
+*,*::after,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: #e5e7df;
+    font-family: Arial, Helvetica, sans-serif;
+    /* overflow-x: hidden; */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-top: 2%;
+}
+
+nav > h1 {
+    padding-left: 1.2rem;
+}
+
+
+nav > .logo {
+    font-size: 30px;
+}
+
+nav > .nav-last {
+    padding-right: 1.2rem;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;  
+}
+
+nav ul li {
+    font-size: 1.3rem;
+    font-weight: 800;
+    border: none;
+    border: 1px solid transparent;
+    transition: all 0.75s;
+
+    &:hover {
+        border-bottom: 2px solid black;
+        transform: scale(1.1);
+        cursor: pointer;
+
+    }
+}
+
+.page1 {
+    width: 100%;
+}
+
+.container {
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container > .left {
+    padding-left: 16px;
+    width: 40%;
+    font-size: 1.3rem;
+    margin-top: 9%;
+    line-height: 1.4;
+}
+
+.container > .left > button {
+    margin-top: 10%;
+    font-size: 1.3rem;
+    border: none;
+    border-bottom: 1px solid black;
+
+}
+
+.container > .left > button > .arrow{
+    margin-left: 40px;
+}
+
+
+.container > .right {
+    width: 60%;
+    max-width: 800px;
+    margin-top: 8%;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.2;
+}
+
+
+.page1 .crossal {
+    width: 100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    
+}
+
+.page1 .crossal .inside-crossal{
+   display: inline-block;
+    white-space: nowrap;
+    animation: slide 20s infinite linear;
+}
+
+
+.page1 .crossal .inside-crossal > span {
+    font-size: 25rem;
+    font-weight: 700;
+}
+
+.page1 .crossal .inside-crossal > img {
+    padding-left: 10px;
+    height: 290px;
+} 
+
+
+@keyframes slide {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+
+/* page 2 */
+.page2 {
+    width: 100vw;
+    height: 100vh;
+}
+
+.page2 > h1 {
+    font-size: 3rem;
+    width: 70vw;
+    padding-left: 16px;
+    font-weight: 500;
+    line-height: 1.07;
+}
+
+.page2 .margin{
+    margin-bottom: 7%;
+}
+
+.page2 > hr {
+    margin-top: 6%;
+    height: 2px;
+    color: rgb(30, 30, 30);
+}
+
+
+/* page3 */
+
+.page3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding-top: 16px;
+}
+
+.page3 .first{
+    min-width  : 50%;
+    padding-left: 16px;
+}
+
+.page3 .first > p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.page3 .second {
+    max-width: 30%;
+}
+
+.page3 .second .topic{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.page3 .second .des{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgba(148,150,144);
+    margin-bottom: 25px;
+}
+
+
+.page3 .three {
+    margin-left: auto; /* Pushes the .three div to the end */
+    align-self: flex-start; /* Aligns the content inside the .three div to the start */
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* Page 4 */
+
+.page4{
+    background-color:#ffffff;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page4  .nav  .first {
+    padding-left: 16px;
+
+}
+
+.page4 > .nav,.first,.second,.third{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.page4 > .highlight{
+    position: relative;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    overflow-x: auto;
+}
+
+.page4 .highlight > .hgt-work{
+    font-size: 13rem;
+    font-weight: 900;
+   
+}
+
+
+
+.page4 .highlight > .hgt-work > video{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.video-des {
+    position: absolute;
+    bottom: 3%;
+    left: 52%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-family: gilroy;
+    font-weight: 500;
+    width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+

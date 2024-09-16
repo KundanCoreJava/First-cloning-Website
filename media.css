@@ -1,0 +1,152 @@
+/* Media Queries for better off clone */
+
+/* nav bar */
+
+nav > i {
+  font-size: 30px;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  /* Nav icon */
+  nav > i {
+    display: initial;
+  }
+
+  nav > ul {
+    display: none;
+  }
+
+  nav > .nav-last {
+    display: none;
+  }
+
+  /* page1 */
+
+  .page1 .container .left,
+  .page1 .container .right {
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+  }
+
+  .crossal {
+    width: 100%;
+    font-size: 20rem;
+    font-weight: 900;
+  }
+
+  /* Page2 */
+  .page2 {
+    height: auto;
+  }
+  .page2 > h1 {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  /* Page3 */
+
+  .page3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+ .page3 .first,.second,.three{
+    margin: 0 auto;
+ }
+
+ .page3 .first > p {
+    font-size: 2rem;
+    font-weight: 500;
+ }
+
+ .page3 .second{
+    max-width: 100%;
+ }
+
+ .page3 .second .topic{
+    text-align: center;
+    padding-top: 4%;
+    font-size: 1.5rem;
+ }
+
+ .page3 .second .des{
+    font-size: 1.4rem;
+    text-align: center;
+    word-spacing: 2px;
+ }
+
+ /* Page 4 */
+
+ .page4{
+    width: 100%;
+    background-color: #fff;
+    height: auto;
+ }
+
+ .nav > div{
+    padding: 3%;
+    font-size: 1.6rem;
+    font-weight: 400;
+ }
+ .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+ }
+
+ /* page4 content */
+
+ .highlight{
+    overflow-x: inherit;
+    overflow-y: auto;
+    white-space: nowrap;
+ }
+
+ .highlight .hgt-work {
+    font-size: 3rem;
+ }
+
+ .hightlight .hgt-work> video{
+    height: auto;
+    width: auto;
+ }
+
+ .highlight .video-des{
+    display: none;
+ }
+    /* Scroll bar */
+
+ ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #674188; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #E2BFD9; 
+  }
+
+
+
+
+}
+  
+
